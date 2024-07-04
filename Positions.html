@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+  </head>
+  <style>
+    .box {
+      /* background-color: red; */
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+      /* display: inline-block; */
+      /* text-align: center; */
+      /* justify-content: center; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+
+      /* position: relative; */
+    }
+
+    .box-1 {
+      border: 10px solid green;
+      background-color: aqua;
+    }
+    .box-2 {
+      border: 10px solid rgb(214, 133, 12);
+      background-color: aqua;
+      /* position: relative; */
+    }
+    .box-3 {
+      border: 10px solid rgb(109, 0, 128);
+      background-color: aqua;
+    }
+    .box-4 {
+      border: 10px solid rgb(6, 0, 128);
+      background-color: aqua;
+    }
+    .box-5 {
+      border: 10px solid rgb(32, 22, 7);
+      background-color: aqua;
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+    .box-6 {
+      border: 10px solid rgb(128, 6, 0);
+      background-color: aqua;
+    }
+
+    section div {
+      background-color: red;
+      width: 150px;
+      height: 150px;
+      margin-top: 100px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+    }
+
+    .sub-1 {
+      border: 10px solid green;
+      background-color: aqua;
+    }
+    .sub-2 {
+      border: 10px solid rgb(214, 133, 12);
+      background-color: aqua;
+      /* position: relative; */
+    }
+    .sub-3 {
+      background-color: powderblue;
+      position: relative;
+      border: 10px solid red;
+      right: 50px;
+    }
+
+    .sub-4 {
+      border: 10px solid rgb(6, 0, 128);
+      background-color: aqua;
+      /* position: relative; */
+    }
+    .sub-5 {
+      border: 10px solid rgb(32, 22, 7);
+      background-color: aqua;
+      /* position: relative; */
+      /* top: 40px; */
+      /* left: 10px; */
+    }
+    .name-1 {
+      color: red;
+      /* margin-bottom: 40px; */
+    }
+  </style>
+  <body>
+    <h1 class="name-1">position : absolute</h1>
+    <div class="box-1 box">box-1</div>
+    <div class="box-2 box">box-2</div>
+    <div class="box-3 box">box-3</div>
+    <div class="box-4 box">box-4</div>
+    <div class="box-5 box">box-5</div>
+    <div class="box-6 box">box-6</div>
+    <h1 class="name-2">position : relative</h1>
+    <section class="sub-heading">
+      <div class="sub-1">box-1</div>
+      <div class="sub-2">box-2</div>
+      <div class="sub-3">box-3</div>
+      <div class="sub-4">box-4</div>
+      <div class="sub-5">box-5</div>
+    </section>
+  </body>
+</html>
